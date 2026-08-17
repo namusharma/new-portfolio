@@ -1,7 +1,4 @@
-const words =[
-  {text : 'Ideas', imgPath : '/images/ideas.svg'},
-  {text : 'Concepts', imgPath : '/images/concepts.svg'}
-]
+import { words } from "../constants/index.js";
 
 const Hero = () => {
   return (
@@ -22,16 +19,21 @@ const Hero = () => {
               <span className="wrapper">
                 {words.map((word) => (
                   <span key={word.text} className="flex items-center md:gap-3 gap-1 pb-2">
-                    <img src={word.imgPath} alt={word.text} className="xl:size-12 md:size-10 size-7 md"/>
+                    <img src={word.imgPath} alt={word.text} className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50"/>
                     </span>
                 ))}
               </span>
              </span>
              </h1>
+             
           <h1> Built with quiet </h1>
           <h1>Relentless precision. </h1>
         </div>
+    <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+            Hi, I'm Namya, a developer and designer with a passion for creating innovative solutions. I specialize in building web applications that are both functional and visually appealing. My goal is to bring ideas to life through code and design, ensuring a seamless user experience.
 
+             </p>
+             <Button/>
         </div>
      </header>
     {/* Right: 3D model */}
