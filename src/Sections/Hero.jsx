@@ -1,4 +1,5 @@
 import { words } from "../constants/index.js";
+import Button from "../components/Button";
 
 const Hero = () => {
   return (
@@ -33,7 +34,9 @@ const Hero = () => {
             Hi, I'm Namya, a developer and designer with a passion for creating innovative solutions. I specialize in building web applications that are both functional and visually appealing. My goal is to bring ideas to life through code and design, ensuring a seamless user experience.
 
              </p>
-             <Button/>
+             <Button
+             className="md:w-80 md:h-16 w-60 h-12"
+             />
         </div>
      </header>
     {/* Right: 3D model */}
