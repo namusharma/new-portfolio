@@ -1,5 +1,6 @@
 import { words } from "../constants/index.js";
 import Button from "../components/Button";
+import HeroExp from "../components/HeroModels/HeroExp";
 
 const Hero = () => {
   return (
@@ -31,15 +32,21 @@ const Hero = () => {
           <h1>Relentless precision. </h1>
         </div>
     <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-            Hi, I'm Namya, a developer and designer with a passion for creating innovative solutions. I specialize in building web applications that are both functional and visually appealing. My goal is to bring ideas to life through code and design, ensuring a seamless user experience.
-
+            Hi, I'm Namya, a developer and designer with a passion for creating innovative solutions. I specialize in building web applications that are both functional and visually appealing. 
              </p>
              <Button
              className="md:w-80 md:h-16 w-60 h-12"
+             id="button"
+             text="see my work"
              />
         </div>
      </header>
     {/* Right: 3D model */}
+    <figure>
+      <div className="hero-3d-layout ">
+         <HeroExp/>
+      </div>
+    </figure>
 
   </div>
   
