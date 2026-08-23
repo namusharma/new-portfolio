@@ -31,9 +31,12 @@ const Hero = () => {
           <h1> Built with quiet </h1>
           <h1>Relentless precision. </h1>
         </div>
-    <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-            Hi, I'm Namya, a developer and designer with a passion for creating innovative solutions. I specialize in building web applications that are both functional and visually appealing. 
-             </p>
+   <p className="text-neutral-300 md:text-xl font-normal leading-relaxed mb-8 max-w-xl relative z-10">
+  Hi, I'm Namya, a developer and designer with a passion for creating innovative solutions. 
+  I specialize in building web applications that are both functional and visually appealing. 
+</p>
+
+
              <Button
              className="md:w-80 md:h-16 w-60 h-12"
              id="button"

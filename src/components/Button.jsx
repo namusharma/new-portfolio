@@ -1,6 +1,4 @@
 
-import React from 'react'
-
 const Button = ({text, className, id}) => {
   return (
     <a className={`${className ?? ''} cta-wrapper`} id={id}>
