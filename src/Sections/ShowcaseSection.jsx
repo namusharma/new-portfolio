@@ -8,7 +8,10 @@ const ShowcaseSection = () => {
 {/* LEFT */}
 <div className ="first-project-wrapper">
     <div className="image-wrapper">
-         <img src=""/>
+         <img src="/images/project1.png" alt="Ryde"/>
+
+    </div>
+    <div className="text-content">
 
     </div>
 
