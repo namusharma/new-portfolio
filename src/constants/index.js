@@ -67,20 +67,20 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
-  },
-  {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
-  },
-  {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
-  },
+  imgPath: "/images/chat.png",
+  title: "Effective Communication",
+  desc: "Communicating clearly and working collaboratively to ensure ideas, progress, and goals are understood.",
+},
+{
+  imgPath: "/images/seo.png",
+  title: "Adaptability",
+  desc: "Quickly adapting to new environments, technologies, and challenges while maintaining a positive approach.",
+},
+{
+  imgPath: "/images/time.png",
+  title: "On-Time Delivery",
+  desc: "Managing tasks efficiently and completing work within deadlines while maintaining quality and attention to detail.",
+},
 ];
 
 const techStackImgs = [
@@ -140,45 +140,36 @@ const techStackIcons = [
 ];
 
 const expCards = [
-  {
-    review:
-      "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review:
-      "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review:
-      "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
-    ],
-  },
+ {
+  title: "Web Developer Intern",
+  company: "Glam AI Pvt. Ltd.",
+  date: "August 2025 - January 2026",
+  responsibilities: [
+    "Developed and maintained responsive web pages and user-facing features.",
+    "Collaborated on implementing and improving website functionality and user experience.",
+    "Worked on debugging, testing, and optimizing web applications for better performance.",
+  ],
+},
+{
+  title: "Cybersecurity Trainee",
+  company: "Null Class",
+  date: "June 2024 - July 2024",
+  responsibilities: [
+    "Completed training focused on website and web application security concepts.",
+    "Learned about common web vulnerabilities and security practices for protecting websites.",
+    "Gained hands-on knowledge of identifying potential security issues and improving web security.",
+  ],
+},
+{
+  title: "Web Developer & Web Security Intern",
+  company: "Webcodeft Pvt. Ltd.",
+  date: "June 2026 - July 2026",
+  responsibilities: [
+    "Developed and improved responsive website features using modern web development technologies.",
+    "Worked on testing website functionality and identifying issues affecting performance and usability.",
+    "Applied web security practices to help identify common vulnerabilities and improve website security.",
+  ],
+},
 ];
 
 const expLogos = [
