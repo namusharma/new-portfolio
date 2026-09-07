@@ -259,7 +259,6 @@ export {
   words,
   abilities,
   logoIconsList,
-  counterItems,
   expCards,
   expLogos,
   testimonials,

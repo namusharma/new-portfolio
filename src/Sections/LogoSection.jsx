@@ -1,4 +1,4 @@
-import React from 'react'
+import { logoIconsList } from '../constants'
 const LogoIcon = ({icon})=>{
     return(
         <div className="flex-none flex-center marquee-item">
