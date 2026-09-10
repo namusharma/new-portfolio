@@ -12,10 +12,35 @@ const ExperienceSection = () => {
              {expCards.map((card)=>(
                 <div key={card.title} className="exp-card-wrapper">
                   {card.title}
-                    <div >
+                  {/* <div className="xl:w-2/6">
+                  <GlowCard card={card}>
+                  <div>
+                    <img src={card.imgPath} alt={card.title}/>
+                    </div>
+                    </GlowCard>
+                   </div> */}
+                  <div className="xl:w-6/6">
+                  <div className="flex items-start">
+                    <div className="timeline-wrapper">
+                      <div className="timeline "/>
+                      <div className="gradient-line w-1 h-full"/>
+                      </div>
+                      <div className="expText flex xl:gap-20 md: gap-10 gap-5 relative z-20">
+                        <div className="timeline-logo">
+                          <img src={cardcard.logoPath} alt="logo"/>
+                          </div>
+                          <div>
+                            
+                            </div>
+                      </div>
+
+                  </div>
+                    </div>
+                 
+               
 
                     </div>
-                     </div>
+                    
              )
             )}
            

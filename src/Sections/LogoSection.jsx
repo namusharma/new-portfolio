@@ -3,9 +3,7 @@ const LogoIcon = ({icon})=>{
     return(
         <div className="flex-none flex-center marquee-item">
             <img src={icon.imgPath} alt={icon.name}/>
-            <div className="absolute w-full h-full top-0 left-0 flex-center text-white text-sm font-semibold">
-
-            </div>
+            
 
         </div>
     )
