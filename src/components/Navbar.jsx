@@ -2,43 +2,74 @@ import { useEffect, useState } from 'react'
 import { navLinks } from '../constants'
 
 const Navbar = () => {
-    const [scrolled , setScrolled] = useState(false);
-    useEffect(()=>{
-  const handleScroll =() =>{
-    setScrolled(window.scrollY > 0);
-  }
-  window.addEventListener('scroll', handleScroll);
-  return () => window.removeEventListener('scroll', handleScroll);
-    }, [])
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : ''
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
+
+  const closeMenu = () => setMobileMenuOpen(false)
+
   return (
-   <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
-    <div className ="inner">
-    <a className="logo" href="#hero">
-     Namya Sharma
-     </a>
-     <nav className ="Desktop">
-       <ul>
-        {navLinks.map(({link , name}) =>(
-           <li key={name} className="group">
-            <a href={link}>
-                <span>{name}</span>
-                <span className="underline"></span>
+    <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
+      <div className="inner">
+        <a className="logo" href="#hero" onClick={closeMenu}>
+          Namya Sharma
+        </a>
 
-            </a>
-           </li>
-        ))}
-       </ul>
+        <nav className="desktop-nav" aria-label="Main navigation">
+          <ul>
+            {navLinks.map(({ link, name }) => (
+              <li key={name} className="group">
+                <a href={link} onClick={closeMenu}>
+                  <span>{name}</span>
+                  <span className="underline" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-     </nav>
-     <a href="#contact" className="contacts-btn group">
-        <div className="inner">
-            <span> Contact me</span>
+        <a href="#contact" className="contact-btn group" onClick={closeMenu}>
+          <span>Contact me</span>
+        </a>
 
-        </div>
+        <button
+          type="button"
+          className="mobile-menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded={mobileMenuOpen}
+          onClick={() => setMobileMenuOpen((current) => !current)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
 
-     </a>
-     </div>
-   </header>
+      <nav className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`} aria-label="Mobile navigation">
+        <ul>
+          {navLinks.map(({ link, name }) => (
+            <li key={name}>
+              <a href={link} onClick={closeMenu}>{name}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
   )
 }
 
