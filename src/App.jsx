@@ -4,6 +4,7 @@ import ShowcaseSection from './Sections/ShowcaseSection'
 import FeatureCards from './Sections/FeatureCards'
 import ExperienceSection from './Sections/ExperienceSection'
 import { socialImgs, testimonials } from './constants'
+import TechStack from './Sections/TechStack'
 
 const App = () => {
   return (
@@ -17,14 +18,15 @@ const App = () => {
       </div>
 
       <ExperienceSection />
+      <TechStack/>
 
-      <section id="testimonials" className="testimonials-section">
+      {/* <section id="testimonials" className="testimonials-section">
         <div className="section-heading">
           <p className="eyebrow">Testimonials</p>
           <h2>What people say</h2>
-        </div>
+        </div> */}
 
-        <div className="testimonial-grid">
+        {/* <div className="testimonial-grid">
           {testimonials.slice(0, 3).map(({ name, mentions, review }) => (
             <article key={name} className="testimonial-card">
               <div className="testimonial-header">
@@ -38,7 +40,7 @@ const App = () => {
             </article>
           ))}
         </div>
-      </section>
+      </section> */}
 
       <footer id="contact" className="site-footer">
         <div className="footer-content">

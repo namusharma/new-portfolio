@@ -85,54 +85,74 @@ const abilities = [
 
 const techStackImgs = [
   {
-    name: "React Developer",
+    name: "React ",
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "Python Developer",
+    name: "Python ",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    name: "SpringBoot",
+    imgPath: "/images/logos/springboot.png",
   },
   {
-    name: "Interactive Developer",
+    name: "Interactive Designer",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "UI/UX Designer",
     imgPath: "/images/logos/git.svg",
+  },
+   {
+    name: "C++",
+    imgPath: "/images/logos/C++.png",
+  },
+   {
+    name: "MySql",
+    imgPath: "/images/logos/SQL.png",
+  },
+   {
+    name: "Rest API's",
+    imgPath: "/images/logos/rest.png",
+  },
+   {
+    name: "HTML",
+    imgPath: "/images/logos/html.png",
+  },
+   {
+    name: "Java",
+    imgPath: "/images/logos/java.png",
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Backend",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Interactive Developer",
+    name: "Interactive Designer",
     modelPath: "/models/three.js-transformed.glb",
     scale: 0.05,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "UI/UX Designer",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
