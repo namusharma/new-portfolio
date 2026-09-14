@@ -19,6 +19,7 @@ const App = () => {
 
       <ExperienceSection />
       <TechStack/>
+      <Contact />
 
       {/* <section id="testimonials" className="testimonials-section">
         <div className="section-heading">

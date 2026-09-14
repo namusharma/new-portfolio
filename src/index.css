@@ -246,6 +246,14 @@ section {
     }
   }
 
+  .premium-panel {
+    @apply relative overflow-hidden rounded-[28px] border border-white/10 bg-[#070b12]/90 shadow-[0_30px_80px_rgba(0,0,0,0.7)] backdrop-blur-xl;
+  }
+
+  .contact-field {
+    @apply w-full rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white placeholder:text-white/35 transition-all duration-300 focus:border-cyan-400/60 focus:bg-white/[0.06] focus:outline-none focus:ring-2 focus:ring-cyan-400/20;
+  }
+
   .card-border {
     @apply border border-black-50 bg-black-100;
   }
