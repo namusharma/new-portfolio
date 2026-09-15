@@ -1,9 +1,6 @@
-import { OrbitControls } from '@react-three/drei';
-import React from 'react'
 import {Environment , Float , OrbitControls , useGLTF} from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
 import {useEffect} from 'react'
-import * as THREE from 'three';
 // GLTF or Canvas is used in 3d react js
 const TechIcon = ({model}) => {
     const scene = useGLTF(model.modelPath);
@@ -11,12 +8,12 @@ const TechIcon = ({model}) => {
         if(model.name === 'Interactive Designer'){
             scene.scene.traverse((child)=>{
                 if(child.isMesh && child.name === 'Object_5'){
-                    child.material = new Three.MeshStandardMaterial({color : 'white'})
+                    child.material.color.set('white')
                 }
             })
         }
 
-    } , [scene])
+    } , [model.name, scene])
   return (
     <Canvas>
       <ambientLight intensity ={0.3}/>

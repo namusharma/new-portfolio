@@ -1,6 +1,7 @@
-import React from 'react'
 import {useGSAP} from '@gsap/react'
 import {gsap} from 'gsap'
+import TitleHeader from '../components/TitleHeader'
+import { techStackImgs } from '../constants'
 const TechStack = () => {
   useGSAP(()=>{
     gsap.fromTo('.tech-card' , {y : 50 , opacity : 0} , {
@@ -17,7 +18,7 @@ const TechStack = () => {
 
   })
   return (
-    <div id="skills" className="flex-center section-padding">
+    <div className="flex-center section-padding">
         <div className="w-full h-full md:px-10 px-5">
             <TitleHeader title="Tech Stack" 
             sub = "Technologies I work with"

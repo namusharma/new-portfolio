@@ -27,7 +27,8 @@ const Navbar = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'}`}>
       <div className="inner">
         <a className="logo" href="#hero" onClick={closeMenu}>
-          Namya Sharma
+          <img src="/images/person.png" alt="Namya Sharma" />
+          <span>Namya Sharma</span>
         </a>
 
         <nav className="desktop-nav" aria-label="Main navigation">

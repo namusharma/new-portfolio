@@ -3,8 +3,10 @@ import Hero from './Sections/Hero'
 import ShowcaseSection from './Sections/ShowcaseSection'
 import FeatureCards from './Sections/FeatureCards'
 import ExperienceSection from './Sections/ExperienceSection'
-import { socialImgs, testimonials } from './constants'
+import { socialImgs } from './constants'
 import TechStack from './Sections/TechStack'
+import Contact from './Sections/Contact'
+import Footer from './Sections/Footer'
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
       <ExperienceSection />
       <TechStack/>
       <Contact />
+      <Footer />
 
       {/* <section id="testimonials" className="testimonials-section">
         <div className="section-heading">
@@ -43,7 +46,7 @@ const App = () => {
         </div>
       </section> */}
 
-      <footer id="contact" className="site-footer">
+      <footer className="site-footer">
         <div className="footer-content">
           <div>
             <p className="eyebrow">Let’s build</p>

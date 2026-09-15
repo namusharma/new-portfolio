@@ -254,23 +254,24 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    url: "https://www.instagram.com/",
-    imgPath: "/images/insta.png",
+    name: "LeetCode",
+    url: "https://leetcode.com/u/231034006/",
+    imgPath: "/images/code.png",
   },
   {
-    name: "fb",
-    url: "https://www.facebook.com/",
-    imgPath: "/images/fb.png",
+    name: "Github",
+    url: "https://github.com/namusharma",
+    imgPath: "/images/github.png",
   },
+  
   {
     name: "x",
-    url: "https://www.x.com/",
+    url: "https://x.com/SharmaNamy40075",
     imgPath: "/images/x.png",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/",
+    url: "https://www.linkedin.com/in/namya-sharma/",
     imgPath: "/images/linkedin.png",
   },
 ];
