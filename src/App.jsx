@@ -3,7 +3,6 @@ import Hero from './Sections/Hero'
 import ShowcaseSection from './Sections/ShowcaseSection'
 import FeatureCards from './Sections/FeatureCards'
 import ExperienceSection from './Sections/ExperienceSection'
-import { socialImgs } from './constants'
 import TechStack from './Sections/TechStack'
 import Contact from './Sections/Contact'
 import Footer from './Sections/Footer'
@@ -46,23 +45,7 @@ const App = () => {
         </div>
       </section> */}
 
-      <footer className="site-footer">
-        <div className="footer-content">
-          <div>
-            <p className="eyebrow">Let’s build</p>
-            <h3>Ready to turn ideas into a polished product?</h3>
-          </div>
-          <a href="mailto:hello@namyasharma.dev">hello@namyasharma.dev</a>
-        </div>
-
-        <div className="social-row">
-          {socialImgs.map(({ name, url, imgPath }) => (
-            <a key={name} href={url} target="_blank" rel="noreferrer" aria-label={name}>
-              <img src={imgPath} alt={name} />
-            </a>
-          ))}
-        </div>
-      </footer>
+    
     </>
   )
 }
