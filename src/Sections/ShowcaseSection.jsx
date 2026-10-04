@@ -60,7 +60,7 @@ useGSAP(() => {
     <div className="image-wrapper bg-[#ffe7eb]">
 <img src="/images/project3.png" alt="Project 3"/>
   </div>
-  <h2> A startup showcase app </h2>
+  <h2> AI Smart Assistance </h2>
   </div>
 </div>
 
